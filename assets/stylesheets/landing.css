@@ -1,0 +1,83 @@
+.purple-section {
+    background-color: #8b338b;
+    color: white;
+}
+
+
+.btn-primary {
+    background-color: #9800ff;
+    border-color: #8000ff;
+}
+
+#moving-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+}
+
+#moving-box {
+    z-index: 10;
+    position: relative;
+    height: 400px;
+    top: -800px;
+    transform-origin: 100% 100%;
+}
+
+#phone-frame {
+    z-index: 11;
+}
+
+.hero-image {
+	max-width: 100%; 
+    min-width: 200px; 
+	padding-bottom: 20px;
+}
+
+.text-col {
+    min-width: 200px;
+    max-width: 100%;
+}
+
+a.btn-interest {
+	background-color: transparent;
+	border-color: transparent;
+	color: #b3d7ff;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-link {
+	color: rgba(0,0,0,.9);
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+a h3{
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #8000ff;
+}
+
+.navbar {
+    /*background-color: transparent;*/
+    background-color: #8b338b;
+}
+
+h1{
+    font-family: 'Cambo', serif;
+}
+
+body{
+    font-family: Catamaran;
+    font-size: 150%;
+}

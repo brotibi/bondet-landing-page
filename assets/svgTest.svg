@@ -1,0 +1,9 @@
+<svg width='800' height='800' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+<rect id='B0' x='25' y='25' width='100' height='100' fill='rgb(255, 0, 255)' visibility='hidden'>
+<set attributeType='xml' attributeName='visibility' begin='0.000000s' to='visible'/>
+<animate attributeType='xml' attributeName='x' begin='0.000000s' dur='2.000000s' from='25' to='50' fill='freeze'/>
+<animate attributeType='xml' attributeName='y' begin='0.000000s' dur='2.000000s' from='25' to='300' fill='freeze'/>
+<animate attributeType='xml' attributeName='width' begin='0.000000s' dur='2.000000s' from='100' to='200' fill='freeze'/>
+<animate attributeType='xml' attributeName='height' begin='0.000000s' dur='2.000000s' from='100' to='200' fill='freeze'/>
+</rect>
+</svg>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel='stylesheet' type='text/css' href='/resources/tutorial/css/example.css'>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/stylesheets/landing.css" />
+  <link rel="stylesheet" href="assets/stylehseets/moving-box.css">
+
+  <title>Bondet</title>
+
+</head>
+
+<body>
+  <div id="content">
+    <!--Header Bar-->
+    <nav class="navbar sticky-top navbar-light transparent">
+      <a href="#" class="navbar-brand">
+        <h3><b>Bondet</b></h3>
+      </a>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Up</button>
+    </nav>
+    <!-------->
+    <div class="jumbotron jumbotron-fluid purple-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-col">
+            <h1 class="display-1"><b>Got Stuff?</b></h1>
+            <p class="lead">We know some people who want to help you move it.</p>
+          </div>
+          <div class="col">
+            <img id="stage0" class="hero-image" src="assets/images/stuffstageone.png" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-primary nav-link btn-interest" href="#sign-up">I'm Interested</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col text-col">
+          <h3>Show us what you are working with.</h3>
+          <p>We'll this to match you up with someone capable of helping you out with it.</p>
+        </div>
+        <div class="col">
+          <img id="stage1" class="hero-image" src="assets/images/handstagetwo.png" />
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid purple-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-col">
+            <h3>Browse through those willing to help out.</h3>
+            <p>Because we know that you'll have time, and location preferences.</p>
+          </div>
+          <div class="col">
+            <img id="stage2" class="hero-image" src="assets/images/mapstagethree.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col text-col">
+          <h3>Bid adieu.</h3>
+          <p>This is where the magic happens. You'll do more than pass over your things, you'll the meet the person
+            behind the move.</p>
+        </div>
+        <div class="col">
+          <img id="stage3" class="hero-image" src="assets/images/peoplemeeting.png" />
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid purple-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-col">
+            <h3>After It All</h3>
+            <p>You can get back to rocking your life. With one less thing to worry about.</p>
+          </div>
+          <div class="col">
+            <img id="stage4" class="hero-image" src="assets/images/rockon.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row align-items-center d-flex p-2 bd-highlight">
+        <div class="form-group ">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <button id="email" onclick="storeData()" class="btn btn-primary">Sign Me Up!</button>
+      </div>
+    </div>
+  </div>
+  <div id="moving-container">
+    <img id="moving-box" src="assets/images/movingbox.png" />
+  </div>
+  <script src="assets/scripts/moving-box.js"></script>
+
+  <!--firebase functionality-->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+  <script src="./api/server.js"></script>
+</body>
+
+</html>

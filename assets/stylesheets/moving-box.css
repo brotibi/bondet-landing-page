@@ -1,0 +1,18 @@
+#moving-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+}
+
+#moving-box {
+    z-index: 10;
+    position: relative;
+    height: 400px;
+    top: -800px;
+}
+
+#phone-frame {
+    z-index: 11;
+}
