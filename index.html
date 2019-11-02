@@ -13,108 +13,207 @@
 
   <link rel="stylesheet" href="assets/stylesheets/landing.css" />
   <link rel="stylesheet" href="assets/stylehseets/moving-box.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
   <title>Bondet</title>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navigationBar" data-offset="3">
   <div id="content">
+      <div class="jumbotron jumbotron-fluid header-section">
+          <div class="container">
+            <div class="align-items-flex-start">
+                <div class="col justify-items-left">
+                    <img src="assets/images/Final_Logo 1.png" width = "200vw"/>
+                  </div>
+              <div class="">
+                <h1>Bondetous</h1>
+                <h2><i>good of all</i></h2>
+              </div>
+            </div>
+          </div>
+        </div>
     <!--Header Bar-->
-    <nav class="navbar sticky-top navbar-light transparent">
-      <a href="#" class="navbar-brand">
-        <h3><b>Bondet</b></h3>
-      </a>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Up</button>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" id = "navigationBar">
+        <a href="/" class="navbar-brand">
+          <img src="./assets/images/BondetousLogoWithText.png" width="160vw" id = "logo-brand" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+      <!--button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Up</button-->
+      <div class = "collapse navbar-collapse" id = "navbarToggler">
+      <ul class="navbar-nav nav mr-auto mt-2 mt-lg-0 nav-pills">
+          <li class="nav-item">
+            <a class="nav-link " href="#platform">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#application">Application</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#local">Local</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#neighbors">Neighbors</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link " href="#register">Sign Up</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link " href="#about-us">About Us</a>
+          </li>  
+      </ul>
+      </div>
     </nav>
+    <div >
     <!-------->
-    <div class="jumbotron jumbotron-fluid purple-section">
+    <div class="jumbotron jumbotron-fluid purple-section" id = "platform">
       <div class="container">
         <div class="row align-items-center">
           <div class="col text-col">
-            <h1 class="display-1"><b>Got Stuff?</b></h1>
-            <p class="lead">We know some people who want to help you move it.</p>
+            <h1><b>Need Help With Some Items?</b></h1>
+            <p>We know some people who can help?</p>
+            <p>That's the power of what we are building. A people to people platform to accomodate those with storing and moving needs.</p>
           </div>
           <div class="col">
-            <img id="stage0" class="hero-image" src="assets/images/stuffstageone.png" />
+            <img id="stage1" class="hero-image" src="assets/images/stageone.svg" />
           </div>
         </div>
       </div>
-      <hr />
       <div class="d-flex justify-content-center">
         <a class="btn btn-primary nav-link btn-interest" href="#sign-up">I'm Interested</a>
       </div>
     </div>
+    <div class="jumbotron jumbotron-fluid white-section"id = "application">
     <div class="container">
       <div class="row align-items-center">
         <div class="col text-col">
           <h3>Show us what you are working with.</h3>
-          <p>We'll this to match you up with someone capable of helping you out with it.</p>
+          <p>We'll match you up with the right mover or storer ASAP.</p>
         </div>
         <div class="col">
-          <img id="stage1" class="hero-image" src="assets/images/handstagetwo.png" />
+          <img id="stage2" class="hero-image" src="assets/images/stagetwo.svg"/>
         </div>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid purple-section">
+    </div>
+    <div class="jumbotron jumbotron-fluid blue-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col text-col">
-            <h3>Browse through those willing to help out.</h3>
+            <h3 id = "local">Browse through those willing to help out.</h3>
             <p>Because we know that you'll have time, and location preferences.</p>
           </div>
           <div class="col">
-            <img id="stage2" class="hero-image" src="assets/images/mapstagethree.png" />
+            <img id="stage3" class="hero-image" src="assets/images/stagethree.svg" />
           </div>
         </div>
       </div>
     </div>
+    <div class="jumbotron jumbotron-fluid white-section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col text-col">
-          <h3>Bid adieu.</h3>
+          <h3 id = "neighbors">Bid adieu.</h3>
           <p>This is where the magic happens. You'll do more than pass over your things, you'll the meet the person
-            behind the move.</p>
+            behind the move or the person storing your items.</p>
         </div>
         <div class="col">
-          <img id="stage3" class="hero-image" src="assets/images/peoplemeeting.png" />
+          <img id="stage4" class="hero-image" src="assets/images/stagefour.svg"/>
         </div>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid purple-section">
+    </div>
+    <div class="jumbotron jumbotron-fluid yellow-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col text-col">
             <h3>After It All</h3>
-            <p>You can get back to rocking your life. With one less thing to worry about.</p>
+            <p>You can get back to your life, worry free.</p>
           </div>
           <div class="col">
-            <img id="stage4" class="hero-image" src="assets/images/rockon.png" />
+           <img id="stage5" class="hero-image" src="assets/images/stagefive.svg" />
           </div>
         </div>
       </div>
     </div>
-    <div class="container ">
-      <div class="row align-items-center d-flex p-2 bd-highlight">
-        <div class="form-group ">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="jumbotron jumbotron-fluid email-section" id = "register">
+        <h1 style = "color:#58427c">Sign Up For Bondetous</h1>
+
+
+        <div class = "emailForm">
+          <a name = "sign-up"></a>
+          <input type="text" name = "signMail" id="email" aria-describedby="emailHelp" placeholder="" required/>
+          <label for="signMail" class = "label-name">
+            <span class = "content-email">Email</span>
+          </label>
+          <button class = "emailButton" id="email" onclick="storeData()" class="btn btn-primary">Sign Me Up!</button>
+
         </div>
-        <button id="email" onclick="storeData()" class="btn btn-primary">Sign Me Up!</button>
-      </div>
     </div>
+    <div class="jumbotron jumbotron-fluid team-section" id = "about-us">
+      <hr/>
+        <div class="container">
+          <div class="align-items-center">
+              <div class="col justify-items-left">
+                  <img src="assets/images/Final_Logo 1.png" width = "200vw"/>
+                </div>
+            <div class=" col text-col">
+              <h1>Meet the Team</h1>
+              <h2><i>rencontrer l'équipe</i></h2>
+              <br/>
+              <ul>
+                <li>
+                  <img src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
+                  <h3>Jovan Jean</h3>
+                  <h4>CEO</h4>
+                </li>
+                <li>
+                    <img src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
+                    <h3>Neel Choudhary</h3>
+                    <h4>COO</h4>
+                </li>
+                <li>
+                      <img src = "assets/images/LindaZeng.PNG">
+                      <h3>Linda Zeng</h3>
+                      <h4>Lead Designer</h4>
+                </li>
+                <li>
+                    <img src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
+                    <h3>Mobolaji Rotibi</h3>
+                    <h4>Full Stack Developer</h4>
+                </li>
+                <li>
+                    <img src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
+                    <h3>Rahul Toppur</h3>
+                    <h4>Cybersecurity Lead</h4>
+                </li>
+                <li>
+                    <img src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
+                    <h3>Mathias Kools</h3>
+                    <h4>Backend Developer</h4>
+                </li>
+                <li>
+                    <img src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
+                    <h3>Oliver Dai</h3>
+                    <h4>Frontend Developer</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </div>
   <div id="moving-container">
-    <img id="moving-box" src="assets/images/movingbox.png" />
+    <img id="moving-box" src="assets/images/Final_Logo 1.png" />
   </div>
   <script src="assets/scripts/moving-box.js"></script>
-
-  <!--firebase functionality-->
-  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
-
-  <script src="./api/server.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

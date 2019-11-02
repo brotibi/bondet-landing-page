@@ -1,8 +1,194 @@
 .purple-section {
-    background-color: #8b338b;
+    /*background-color: #8b338b;*/
+    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
+    /*background-image: url("../images/MaterialPurpleBackground.png");*/
+    background-size: 42.5%;
+    background-repeat: repeat-x;;
+    background-position-x: 70%;
+    background-position-y: 50%;
+    background-color: #58427c;
     color: white;
 }
 
+.blue-section {
+    /*background-color: #8b338b;*/
+    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
+    /*background-image: url("../images/materialbackgroundblue.png");*/
+    background-size: 80%;
+    background-repeat: repeat-x;
+    background-color: #b3d7ff;
+    color: black;
+}
+
+.header-section {
+    /*background-color: #8b338b;*/
+    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
+    /*background-image: url("../images/materialbackgroundblue.png");*/
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-color: white;
+    justify-content: left;
+    text-align: center;
+    color: black;
+}
+
+.header-section h1{
+    font-size: 8vw;
+}
+
+.header-section h2{
+    color: #f3c204;
+    font-family: 'Caveat',cursive;
+}
+
+.header-section img{
+    justify-content: left;
+}
+
+.nav-pills > a > a.active{
+    background-color: #58427c;
+}
+
+.team-section {
+    /*background-color: #8b338b;*/
+    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
+    /*background-image: url("../images/materialbackgroundblue.png");*/
+    background-size: 100%;
+    background-repeat: repeat-x;
+    background-color: white;
+    justify-content: left;
+    text-align: center;
+    color: black;
+}
+
+.team-section h1{
+    font-size: 5vw;
+}
+
+.team-section h2{
+    color: #f3c204;
+    font-family: 'Caveat',cursive;
+}
+
+.team-section h3{
+    color: #58427c;
+}
+
+.team-section h4{
+    color: #f3c204;
+    font-family: 'Caveat',cursive;
+}
+
+.team-section ul li img{
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+}
+
+.team-section ul li{
+    display: inline-block;
+    margin: 3vw;
+}
+
+.team-section ul {
+    margin: 1vw; 
+    padding: 0; 
+    list-style-type: none; list-style-image: none;
+}
+
+.yellow-section {
+    background-color: #f3c204;
+}
+
+.white-section {
+    background-color: white;
+}
+
+.white-section h3 {
+    color: #58427c;
+}
+
+.email-section {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.emailForm{
+    width: 50%;
+    position: relative;
+    
+}
+
+.email-section h1{
+    text-align: center;
+}
+
+.emailForm input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.emailForm label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.emailForm label::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 3px solid #58427c;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-email {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.emailButton {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.emailButton:hover{
+    background-color: #58427c;
+    color: white;
+}
+
+
+.emailForm input:focus + .label-name .content-email, .emailForm input:valid + .label-name .content-email{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color : #58427c;
+}
+
+.emailForm input:focus + .label-name::after, .emailForm input:valid + .label-name::after{
+    transform: translateX(0%);
+}
 
 .btn-primary {
     background-color: #9800ff;
@@ -32,7 +218,12 @@
 .hero-image {
 	max-width: 100%; 
     min-width: 200px; 
-	padding-bottom: 20px;
+    padding-bottom: 20px;
+    /*visibility: hidden;*/
+}
+
+#stage1 {
+    visibility: visible;
 }
 
 .text-col {
@@ -61,23 +252,55 @@ li {
 	font-weight: 500;
 }
 
-a h3{
-  color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #8000ff;
+a h2{
+  color: #58427c;
+  -webkit-text-fill-color: #58427c; /* Will override color (regardless of order) */
+  /*-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #8000ff;*/
+  text-align: left;
+  font-family: 'Cambo', serif;
 }
 
 .navbar {
-    /*background-color: transparent;*/
-    background-color: #8b338b;
-}
-
-h1{
+    background-color: #fcf9ff;
+    /*background-color: #8b338b;*/
+    /*
+    -moz-box-shadow:    3px 3px 2px 2px #58427c;
+    -webkit-box-shadow: 3px 3px 2px 2px #cccccc;
+    box-shadow:         3px 3px 2px 2px #58427c;*/
+    opacity: 99%;
     font-family: 'Cambo', serif;
 }
 
+#logo-brand {
+    top: 50px;
+}
+
+h1{
+    font-family: 'Cambo', sans-serif;
+}
+
 body{
-    font-family: Catamaran;
+    /*font-family: Catamaran;*/
+    font-family: 'Cambo', sans-serif;
     font-size: 150%;
+}
+
+.navbar-brand {
+    align-self: left;
+    bottom: -5px;
+}
+
+@media (min-width: 768px) {
+.navbar-nav {
+    float: none;
+    margin-left: 45vh;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav  li {
+    display: inline-block;
+    float:none;
+}
 }

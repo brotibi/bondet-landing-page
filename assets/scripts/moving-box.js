@@ -12,11 +12,11 @@ const movingBox = document.getElementById('moving-box');
 // javascript object for the element (this will allow us to do some dynamic calculations). We also specify the y
 // position that we want the box to go to (in terms of percentage) of the backdrop of the image. We also give
 // a scale in comparison to the image width.
-const stages =   [{element: document.getElementById('stage0'), positionY: 0.653, scale: 0.3475},
-                {element: document.getElementById('stage1'), positionY: 0.5, scale: 0.38},
-                {element: document.getElementById('stage2'), positionY: 0.5, scale: 0.16},
-                {element: document.getElementById('stage3'), positionY: 0.73, scale: 0.35},
-                {element: document.getElementById('stage4'), positionY: 0.5, scale: 0.60}];
+const stages =   [{element: document.getElementById('stage1'), positionY: 0.75, scale: 0.5},
+                  {element: document.getElementById('stage2'), positionY: 0.5, scale: 0.30},
+                  {element: document.getElementById('stage3'), positionY: 0.125, scale: 0.25},
+                  {element: document.getElementById('stage4'), positionY: 0.8, scale: 0.40},
+                  {element: document.getElementById('stage5'), positionY: 0.5, scale: 0.60}];
 // We then give ourselves a utility function that will return if the current element is visible or scrolled past.
 // Given a DOM element we will determine if the current window is scrolled past having half of the element in view.
 function scrolledHalfwayPast(element) {
@@ -48,6 +48,27 @@ var updateAnimationState = function () {
 movingBox.addEventListener("webkitTransitionEnd", updateAnimationState);
 movingBox.addEventListener("transitionend", updateAnimationState);
 
+function moveTo(newlyReached) {
+    animatingTo = newlyReached;
+    // First we will flush all current transition logic.
+    // Removing classes that do not exist does NOT throw an error.
+    // So we might as well try all of them.
+    movingBox.style.transition = ''; // We clear the transition property to flush.
+    movingBox.style.transition = fallingTransition; // The first is the falling transition.
+    // Now we can get to the good stuff. A chain of transitions. I'm using transitions because
+    // it's a bit cleaner than defining an animation at this moment.
+    const stage = stages[newlyReached];
+    const stageElementRect = stage.element.getBoundingClientRect();
+    const topScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const newSize = stageElementRect.height * stage.scale;
+    const newLeft = stageElementRect.left + stageElementRect.width / 2 - newSize / 2.4;
+    newTop = topScroll + stageElementRect.top + stageElementRect.height * stage.positionY - newSize / 2;
+    movingBox.style.top = newTop+'px';
+    movingBox.style.transform = droppedTransform;
+    movingBox.style.height = newSize+'px';
+    movingBox.style.left = newLeft+'px';
+}
+
 function animationLogic() {
     // Let's loop through each stage backwards and find the first occurence that's scrolled at least
     // halfway in the animation.
@@ -61,28 +82,18 @@ function animationLogic() {
 
     // We will only need to intervene in event logic if we aren't animating or at what's newly reached.
     if (newlyReached > currentStage && newlyReached > animatingTo) {
-        animatingTo = newlyReached;
-        // First we will flush all current transition logic.
-        // Removing classes that do not exist does NOT throw an error.
-        // So we might as well try all of them.
-        movingBox.style.transition = ''; // We clear the transition property to flush.
-        movingBox.style.transition = fallingTransition; // The first is the falling transition.
-        // Now we can get to the good stuff. A chain of transitions. I'm using transitions because
-        // it's a bit cleaner than defining an animation at this moment.
-        const stage = stages[i];
-        const stageElementRect = stage.element.getBoundingClientRect();
-        const topScroll = document.documentElement.scrollTop || document.body.scrollTop;
-        const newSize = stageElementRect.height * stage.scale;
-        const newLeft = stageElementRect.left + stageElementRect.width / 2 - newSize / 2;
-        newTop = topScroll + stageElementRect.top + stageElementRect.height * stage.positionY - newSize / 2;
-        movingBox.style.top = newTop+'px';
-        movingBox.style.transform = droppedTransform;
-        movingBox.style.height = newSize+'px';
-        movingBox.style.left = newLeft+'px';
+        moveTo(newlyReached);
     }
 }
 
-animationLogic();
+function resizeLogic() {
+    currentStage = -1;
+    animatingTo = -1;
+    // We will want to reset everything if there was a resize, we will have to do a new movement.
+    animationLogic();
+}
+
+moveTo(0);
 
 window.onscroll = animationLogic;
-window.onresize = animationLogic;
+window.onresize = resizeLogic;
