@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <link rel='stylesheet' type='text/css' href='/resources/tutorial/css/example.css'>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,210 +9,295 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="assets/stylesheets/landing.css" />
-  <link rel="stylesheet" href="assets/stylehseets/moving-box.css">
+  <link rel="stylesheet" href="assets/stylesheets/landing.css">    
   <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cambo&display=swap" rel="stylesheet">
-  <title>Bondet</title>
-
+  <title>Bondetous</title>
 </head>
-
 <body data-spy="scroll" data-target="#navigationBar" data-offset="3">
-  <div id="content">
-      <div class="jumbotron jumbotron-fluid header-section">
-          <div class="container">
-            <div class="align-items-flex-start">
-                <div class="col justify-items-left">
-                    <img src="assets/images/Final_Logo 1.png" width = "200vw"/>
+  <div class="jumbotron-fluid Banner"> <!-- Banner -->
+    <div class="container">
+        <div class="align-items-flex-start">
+          <div class = "row vertical-align">
+              <div class="col-sm-12 col-md-8 vcenter">
+                  <h1>We are Bondetous</h1>
+                  <p><i>Connecting users and hosts, granting greater flexibility and trust between the residents within communities.</i></p>
+                  <div class = "btn-group">
+                    <button onClick = "window.location.href = '#register'" class = "btn btn-primary">Sign Up</button>
+                    <button onClick = "window.location.href = '#wedo'" class = "btn btn-light">Read More</button>
                   </div>
-              <div class="">
-                <h1>Bondetous</h1>
-                <h2><i>good of all</i></h2>
+                
+              </div>
+              <div class="col-sm-5 col-md-3">
+                  <img src="assets/images/Final_Logo 1.png"/>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!----------------Navigation Bar-------------------------------------->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light" id = "navigationBar">
+      <a href="/" class="navbar-brand">
+        <!--img src="./assets/images/BondetousLogoWithText.png" width="160vw" id = "logo-brand" /-->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <!--span class="navbar-toggler-icon"></span-->
+          <img src="assets/images/Final_Logo 1.png" width = "40px" style = "opacity: 50%;"/>
+        </button>
+        
+    <!--button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Up</button-->
+    <div class = "collapse navbar-collapse justify-content-center" id = "navbarToggler">
+    <ul class="navbar-nav nav justify-content-center mx-auto mt-2 mt-lg-0 nav-pills">
+        <li class="nav-item">
+          <a class="nav-link " href="#wedo">What we do?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#solution">Solution to Your Problem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#started">Getting Started</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#register">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#about-us">About Us</a>
+        </li>  
+    </ul>
+    </div>
+  </nav>
+  <!------------------Problem Statement--------------------------------->
+  <div class="jumbotron-fluid problem-section" id = "wedo"> <!-- Problem statement. -->
+    <div class="container">
+      <h1 class="display-3">Hate Traditional Storage?</h1>
+      <p>We do too. </p>
+      <div class="row justify-content-center">
+            <div class="card">
+                <img src="assets/images/badprices.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h3 class="card-title">Unreasonable Prices</h3>
+                  <p class="card-text"> A lot of moving and storage companies have tons of overhead and often burden the customer with arbitrary fees and costs.</p>
+                </div>
+              </div>
+            <div class="card">
+                <img src="assets/images/inflexibletimelines.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h3 class="card-title">Inflexible Timelines</h3>
+                  <p class="card-text">When working with traditional storage companies the customer often has to comply with company time. Ever tried hiring a storage service on a weekend?.</p>
+                </div>
+              </div>
+            <div class="card">
+                <img src="assets/images/badcustomerservice.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h3 class="card-title">Poor Customer Service</h3>
+                  <p class="card-text">Customers often deal with faceless corporations who could often care less.</p>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+    <!------------------Solution Statement--------------------------------->
+  <div class="jumbotron-fluid solution-section" id = "solution"> <!-- Solution. -->
+    <div class="container">
+      <h1 class="display-3">Our Solution</h1>
+      <p>We empower users.</p>
+      <div class="row justify-content-center">
+          <div class="card">
+              <img src="assets/images/goodprices.svg" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Cost Effective</h3>
+                <p class="card-text">Due to the efficiency of our service were able to offer moving and storage services at a reasonable price.</p>
               </div>
             </div>
-          </div>
-        </div>
-    <!--Header Bar-->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light" id = "navigationBar">
-        <a href="/" class="navbar-brand">
-          <img src="./assets/images/BondetousLogoWithText.png" width="160vw" id = "logo-brand" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-      <!--button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Up</button-->
-      <div class = "collapse navbar-collapse" id = "navbarToggler">
-      <ul class="navbar-nav nav mr-auto mt-2 mt-lg-0 nav-pills">
-          <li class="nav-item">
-            <a class="nav-link " href="#platform">Platform</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#application">Application</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#local">Local</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#neighbors">Neighbors</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link " href="#register">Sign Up</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link " href="#about-us">About Us</a>
-          </li>  
-      </ul>
-      </div>
-    </nav>
-    <div >
-    <!-------->
-    <div class="jumbotron jumbotron-fluid purple-section" id = "platform">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col text-col">
-            <h1><b>Need Help With Some Items?</b></h1>
-            <p>We know some people who can help?</p>
-            <p>That's the power of what we are building. A people to people platform to accomodate those with storing and moving needs.</p>
-          </div>
-          <div class="col">
-            <img id="stage1" class="hero-image" src="assets/images/stageone.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <a class="btn btn-primary nav-link btn-interest" href="#sign-up">I'm Interested</a>
-      </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid white-section"id = "application">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col text-col">
-          <h3>Show us what you are working with.</h3>
-          <p>We'll match you up with the right mover or storer ASAP.</p>
-        </div>
-        <div class="col">
-          <img id="stage2" class="hero-image" src="assets/images/stagetwo.svg"/>
-        </div>
-      </div>
+          <div class="card">
+              <img src="assets/images/flexibletime.svg" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Flexible Scheduling</h3>
+                <p class="card-text">With Bondetous, there will be hosts availble to store your items at any given moment.</p>
+              </div>
+            </div>
+          <div class="card">
+              <img src="assets/images/goodcustomerservice.svg" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Transparent and Trustworthy</h3>
+                <p class="card-text">At Bondetous you'll know who's storing your items, where they're being stored, and have a direct line of communication with your host.</p>
+              </div>
+            </div>
     </div>
     </div>
-    <div class="jumbotron jumbotron-fluid blue-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col text-col">
-            <h3 id = "local">Browse through those willing to help out.</h3>
-            <p>Because we know that you'll have time, and location preferences.</p>
-          </div>
-          <div class="col">
-            <img id="stage3" class="hero-image" src="assets/images/stagethree.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid white-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col text-col">
-          <h3 id = "neighbors">Bid adieu.</h3>
-          <p>This is where the magic happens. You'll do more than pass over your things, you'll the meet the person
-            behind the move or the person storing your items.</p>
-        </div>
-        <div class="col">
-          <img id="stage4" class="hero-image" src="assets/images/stagefour.svg"/>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid yellow-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col text-col">
-            <h3>After It All</h3>
-            <p>You can get back to your life, worry free.</p>
-          </div>
-          <div class="col">
-           <img id="stage5" class="hero-image" src="assets/images/stagefive.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid email-section" id = "register">
-        <h1 style = "color:#58427c">Sign Up For Bondetous</h1>
+  </div>
+  <!---------------------------------------------The Process Start---------------------------------------------->
+  <div class="jumbotron-fluid process-section justify-content-center" id = "started">
+  <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+    
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">User Process</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Host Process</a>
+      </li>
+    
+    </ul>
 
-
-        <div class = "emailForm">
+    <div class="tab-content" id="myTabContent">
+    <!------------------User Process--------------------------------->
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div class="jumbotron-fluid user-section justify-content-center"> <!-- Our user process. -->
+    <div class="container">
+      <h1 class="display-3">All you need to do.</h1>
+      <h1>Request, Choose, Review, and Decide.</h1>
+      <p>That's it!</p>
+      <div class="row justify-content-center">
+          <div class="card">
+              <img src="assets/images/bondet1.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Request</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          <div class="card">
+              <img src="assets/images/bondet2.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Choose</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          <div class="card">
+              <img src="assets/images/bondet3.gif" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Review</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/bondet4.png" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h3 class="card-title">Decide</h3>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <!-------------------------------------Our Host Process-------------------------------------->
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <div class="jumbotron-fluid"> 
+    <div class="container">
+      <h1 class="display-3">What our community hosts see.</h1>
+      <p>Aenean dolor urna, tristique vel nisi a, ornare pretium est. Duis lectus tortor, posuere non purus vel, venenatis laoreet dolor. Donec pharetra sed ante a aliquet. Nulla facilisi.</p>
+      <p>We take care of the people doing the heavy lifting.</p>
+      <div class="row justify-content-center">
+          <div class="card">
+              <img src="assets/images/bondet1.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Request</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          <div class="card">
+              <img src="assets/images/bondet2.png" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Choose</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          <div class="card">
+              <img src="assets/images/bondet3.gif" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h3 class="card-title">Review</h3>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/bondet4.png" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <h3 class="card-title">Decide</h3>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+    </div>
+  </div>
+  </div>
+  <!----------------------------->
+  </div>
+  </div>
+    <!---------------------------------------------The Process End---------------------------------------------->
+  <!-- Sign up email  here. -->
+  <div class = "email-section" id = "register">
+    <h1 class = "display-3">Sign Up</h1>
+    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSf_XVKHdvvgxt-Gt0ETegm7kQG_tbZFIBechOUcEmczs8oNfA/formResponse">
+      <div class = "emailForm mx-auto">
           <a name = "sign-up"></a>
-          <input type="text" name = "signMail" id="email" aria-describedby="emailHelp" placeholder="" required/>
+          <input type="text" name="entry.418747771" id="email" type="text" aria-describedby="emailHelp" placeholder="" required/>
+          <label for="signMail" class = "label-name">
+            <span class = "content-email">Name</span>
+          </label>
+        </div>
+      <div class = "emailForm mx-auto">
+          <a name = "sign-up"></a>
+          <input type="text" name="entry.629017862" type="text" id="email" aria-describedby="emailHelp" placeholder="" required/>
           <label for="signMail" class = "label-name">
             <span class = "content-email">Email</span>
           </label>
-          <button class = "emailButton" id="email" onclick="storeData()" class="btn btn-primary" style="margin-top:6vw">Sign Me Up!</button>
-
         </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid team-section" id = "about-us">
-      <hr/>
-        <div class="container">
-          <div class="align-items-center">
-              <div class="col justify-items-left">
-                  <img src="assets/images/Final_Logo 1.png" width = "200vw"/>
-                </div>
-            <div class=" col text-col">
-              <h1>Meet the Team</h1>
-              <h2><i>rencontrer l'équipe</i></h2>
-              <br/>
-              <ul>
-                <li>
-                  <img src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
-                  <h3>Jovan Jean</h3>
-                  <h4>CEO</h4>
-                </li>
-                <li>
-                    <img src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
-                    <h3>Neel Choudhary</h3>
-                    <h4>COO</h4>
-                </li>
-                <li>
-                      <img src = "assets/images/LindaZeng.PNG">
-                      <h3>Linda Zeng</h3>
-                      <h4>Lead Designer</h4>
-                </li>
-                <li>
-                    <img src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
-                    <h3>Mobolaji Rotibi</h3>
-                    <h4>Full Stack Developer</h4>
-                </li>
-                <li>
-                    <img src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
-                    <h3>Rahul Toppur</h3>
-                    <h4>Security Officer</h4>
-                </li>
-                <li>
-                    <img src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
-                    <h3>Mathias Kools</h3>
-                    <h4>Backend Developer</h4>
-                </li>
-                <li>
-                    <img src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
-                    <h3>Oliver Dai</h3>
-                    <h4>Frontend Developer</h4>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <button class = "emailButton" id="email" onclick="storeData()" class="btn btn-primary">Sign Me!</button>
+    </form>
+  </div>
+  <!---------------------------------------------------------------- About us. -------------------------------------------------->
+  <div class="jumbotron-fluid about-us" id = "about-us"> 
+    <div class="container">
+    <h1 class="display-3">Just who are we?</h1>
+    <p>We are bondetous, we are Northeastern University students, who decided that we should revolutionize the storge and moving industry.</p>
+    <h2>Meet the Founders!</h2>
+    <div class=" col text-col">
+        <br/>
+        <ul class = "row mx-auto">
+          <li>
+            <img src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
+            <h3>Jovan Jean</h3>
+            <h4>CEO</h4>
+          </li>
+          <li>
+              <img src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
+              <h3>Neel Choudhary</h3>
+              <h4>COO</h4>
+          </li>
+          <li>
+                <img src = "https://media.licdn.com/dms/image/C4D03AQGvfsCphdqg7A/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=Y0A-n5yKPTAADYecfmgTE6t41afJ02qd2Quceu7t7sI">
+                <h3>Linda Zeng</h3>
+                <h4>Lead Designer</h4>
+          </li>
+          <li>
+              <img src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
+              <h3>Mobolaji Rotibi</h3>
+              <h4>Product Lead</h4>
+          </li>
+          <li>
+              <img src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
+              <h3>Rahul Toppur</h3>
+              <h4>Cybersecurity Lead</h4>
+          </li>
+          <li>
+              <img src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
+              <h3>Mathias Kools</h3>
+              <h4>Cloud Lead</h4>
+          </li>
+          <li class="mx-auto">
+              <img src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
+              <h3>Oliver Dai</h3>
+              <h4>Frontend Developer</h4>
+          </li>
+        </ul>
       </div>
+    </div>
   </div>
-  </div>
-  <div id="moving-container">
-    <img id="moving-box" src="assets/images/Final_Logo 1.png" />
-  </div>
+  <!----------Bootstrap Script Tags (Do Not Remove)-------------------------->
   <script src="assets/scripts/moving-box.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

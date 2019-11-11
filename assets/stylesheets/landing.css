@@ -1,112 +1,7 @@
-.purple-section {
-    /*background-color: #8b338b;*/
-    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
-    /*background-image: url("../images/MaterialPurpleBackground.png");*/
-    background-size: 42.5%;
-    background-repeat: repeat-x;;
-    background-position-x: 70%;
-    background-position-y: 50%;
-    background-color: #58427c;
-    color: white;
-}
-
-.blue-section {
-    /*background-color: #8b338b;*/
-    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
-    /*background-image: url("../images/materialbackgroundblue.png");*/
-    background-size: 80%;
-    background-repeat: repeat-x;
-    background-color: #b3d7ff;
-    color: black;
-}
-
-.header-section {
-    /*background-color: #8b338b;*/
-    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
-    /*background-image: url("../images/materialbackgroundblue.png");*/
-    background-size: 100%;
-    background-repeat: repeat-x;
-    background-color: white;
-    justify-content: left;
-    text-align: center;
-    color: black;
-}
-
-.header-section h1{
-    font-size: 8vw;
-}
-
-.header-section h2{
-    color: #f3c204;
-    font-family: 'Caveat',cursive;
-}
-
-.header-section img{
-    justify-content: left;
-}
-
-.nav-pills > a > a.active{
-    background-color: #58427c;
-}
-
-.team-section {
-    /*background-color: #8b338b;*/
-    /*background-image: linear-gradient(white 5%, #8b338b 50%, white 95%);*/
-    /*background-image: url("../images/materialbackgroundblue.png");*/
-    background-size: 100%;
-    background-repeat: repeat-x;
-    background-color: white;
-    justify-content: left;
-    text-align: center;
-    color: black;
-}
-
-.team-section h1{
-    font-size: 5vw;
-}
-
-.team-section h2{
-    color: #f3c204;
-    font-family: 'Caveat',cursive;
-}
-
-.team-section h3{
-    color: #58427c;
-}
-
-.team-section h4{
-    color: #f3c204;
-    font-family: 'Caveat',cursive;
-}
-
-.team-section ul li img{
-    border-radius: 50%;
-    width: 12vw;
-    height: 12vw;
-}
-
-.team-section ul li{
-    display: inline-block;
-    margin: 3vw;
-}
-
-.team-section ul {
-    margin: 1vw; 
-    padding: 0; 
-    list-style-type: none; list-style-image: none;
-}
-
-.yellow-section {
-    background-color: #f3c204;
-}
-
-.white-section {
-    background-color: white;
-}
-
-.white-section h3 {
-    color: #58427c;
-}
+html {
+    scroll-behavior: smooth;
+  }
+/********************** Email Form *************************/
 
 .email-section {
     height: 60vh;
@@ -120,7 +15,18 @@
 .emailForm{
     width: 50%;
     position: relative;
-    
+    margin-bottom: 3rem;
+}
+
+.emailForm form{
+    width: 50%;
+    position: relative;
+}
+
+form{
+    align-items: center;
+    width: 100%;
+    position: relative;
 }
 
 .email-section h1{
@@ -133,14 +39,15 @@
     padding-top: 20px;
     border: none;
     outline: none;
+    background-color: white;
 }
 
 .emailForm label{
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
     left: 0%;
     width: 100%;
-    height: 100%;
+    height: 130%;
     pointer-events: none;
     border-bottom: 1px solid black;
     overflow: hidden;
@@ -149,7 +56,7 @@
 .emailForm label::after{
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
     left: 0px;
     width: 100%;
     height: 100%;
@@ -157,6 +64,7 @@
     border-bottom: 3px solid #58427c;
     transform: translateX(-100%);
     transition: all 0.3s ease;
+    
 }
 
 .content-email {
@@ -168,10 +76,11 @@
 
 .emailButton {
     text-align: center;
-    background-color: white;
-    width: 100%;
+    background-color: #c175ff;
+    width: 25%;
     border-radius: 10px;
     border: 1px solid black;
+    margin-top: 2rem;
 }
 
 .emailButton:hover{
@@ -190,60 +99,257 @@
     transform: translateX(0%);
 }
 
+/***************** Banner ************************/
+.Banner {
+    background: transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Banner img{
+    width: 30rem;
+    /*float: right;*/
+}
+
+
+
+.Banner p{
+    /*color: #fcba03;*/
+    color: #696969;
+    text-align: left;
+}
+
+.vertical-align {
+
+    align-items: center;
+}
+
+.Banner h1{
+    font-size: 5vw;
+    text-align: left;
+}
+
+
+
+@media (min-width: 768px) {
+    .col-sm-12 {
+        padding-right: 15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Banner p{
+        text-align: center;
+    }
+    
+    .Banner h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Banner img{
+        width: 80%;
+    }
+
+    .col-sm-12 {
+        text-align: center;
+        padding-bottom: 3rem
+    }
+
+}
+
+
+/******************Nav Bar*****************/
+.navbar {
+    background-color: white;
+    opacity: 99%;
+    font-family: 'Cambo', serif;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,.2);
+}
+
+.navbar-brand {
+    /*align-self: left;*/
+    bottom: -5px;
+}
+
+@media (min-width: 76888888px) {
+    .navbar-nav {
+        float: none;
+        
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav  li {
+        display: inline-block;
+        float:none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        background-color: transparent;
+        opacity: 99%;
+        font-family: 'Cambo', serif;
+        box-shadow: 0 2px 2px -2px transparent;
+        display: none;
+    }
+
+    .navbar-nav li{
+        background-color: #58427c;
+        border: 1px solid black;
+        width: 50vw;
+        text-align: center;
+    }
+}
+
+/**************************Problem Section****************************/
+.problem-section {
+    background: #ededed;
+    /*background-image: linear-gradient(white, #fcf5ff);*/
+    width: 100vw;
+    text-align: center;
+}
+
+.problem-section .card {
+    text-align: center;
+    width: 22rem;
+    height: 43rem;
+    margin-right: 12px;
+    /*margin-left: 8vw;*/
+    margin-bottom: 12px;
+    align-self: center;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.problem-section .card img{
+    width: 22rem;
+}
+
+.card h3{
+    font-weight: bold;
+}
+
+/**************************Solution Section*************************/
+.solution-section {
+    background-color: white;
+    /*background-image: linear-gradient(#fcf5ff, #fffee0);*/
+}
+
+.solution-section .card {
+    text-align: center;
+    width: 22rem;
+    height: 43rem;
+    margin-right: 12px;
+    /*margin-left: 8vw;*/
+    margin-bottom: 12px;
+    align-self: center;
+    text-align: center;
+}
+
+/*************************Process Section************************************/
+.process-section .nav-tabs{
+    text-align: center;
+    /*float: inline-end;*/
+    /*margin-left: 20vw;*/
+}
+.nav-link .active{
+    background-color: #58427c;
+}
+
+.process-section{
+    text-align: center;
+    align-items: center;
+    /*background-image: linear-gradient(#fffee0, #f9f0ff);*/
+    background-color: #ededed;
+}
+
+.process-section .nav-tabs > li {
+    float: none;
+    zoom:1;
+}
+
+.user-section{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.user-section .card {
+    text-align: center;
+    width: 17rem;
+    margin-right: 12px;
+    /*margin-left: 8vw;*/
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+.process-section .card {
+    text-align: center;
+    height: 38rem;
+    width: 17rem;
+    margin-right: 12px;
+    /*margin-left: 8vw;*/
+    margin-bottom: 12px;
+    align-self: center;
+    text-align: center;
+}
+
+.process-section .card img{
+    width: 16.9rem;
+    height: 34rem;
+}
+
+/*************************About Us****************************/
+.about-us{
+    background-color: #ededed;
+}
+
+.about-us ul{
+    list-style: none;
+    list-style-type: none;
+}
+
+.about-us ul li{
+    display: inline-block;
+    padding: 3rem;
+}
+
+.about-us img{
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+}
+
+/********************** Other Stuff ************************/
+
+.jumbotron-fluid {
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+
 .btn-primary {
     background-color: #9800ff;
     border-color: #8000ff;
 }
 
-#moving-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 0%;
-}
-
-#moving-box {
-    z-index: 10;
-    position: relative;
-    height: 400px;
-    top: -800px;
-    transform-origin: 100% 100%;
-}
-
-#phone-frame {
-    z-index: 11;
-}
-
-.hero-image {
-	max-width: 100%; 
-    min-width: 200px; 
-    padding-bottom: 20px;
-    /*visibility: hidden;*/
-}
-
-#stage1 {
-    visibility: visible;
-}
-
-.text-col {
-    min-width: 200px;
-    max-width: 100%;
+.btn-primary:hover{
+    background-color: #58427c;
+    border-color: #58427c;
 }
 
 a.btn-interest {
 	background-color: transparent;
 	border-color: transparent;
 	color: #b3d7ff;
-}
-
-ul {
-    list-style-type: none;
-    display: inline-block;
-}
-
-li {
-    list-style-type: none;
 }
 
 .nav-link {
@@ -255,52 +361,23 @@ li {
 a h2{
   color: #58427c;
   -webkit-text-fill-color: #58427c; /* Will override color (regardless of order) */
-  /*-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #8000ff;*/
   text-align: left;
   font-family: 'Cambo', serif;
 }
 
-.navbar {
-    background-color: #fcf9ff;
-    /*background-color: #8b338b;*/
-    /*
-    -moz-box-shadow:    3px 3px 2px 2px #58427c;
-    -webkit-box-shadow: 3px 3px 2px 2px #cccccc;
-    box-shadow:         3px 3px 2px 2px #58427c;*/
-    opacity: 99%;
-    font-family: 'Cambo', serif;
-}
 
 #logo-brand {
     top: 50px;
 }
 
-h1{
+/* Font settings. */
+
+h1 {
     font-family: 'Cambo', sans-serif;
 }
 
-body{
-    /*font-family: Catamaran;*/
+body {
     font-family: 'Cambo', sans-serif;
     font-size: 150%;
 }
 
-.navbar-brand {
-    align-self: left;
-    bottom: -5px;
-}
-
-@media (min-width: 768px) {
-.navbar-nav {
-    float: none;
-    margin-left: 45vh;
-    display: block;
-    text-align: center;
-}
-
-.navbar-nav  li {
-    display: inline-block;
-    float:none;
-}
-}
