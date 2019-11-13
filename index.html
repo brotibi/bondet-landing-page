@@ -2,6 +2,25 @@
 <html>
 
 <head>
+  <!----Favicon tags-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +34,7 @@
   <title>Bondetous</title>
 </head>
 <body data-spy="scroll" data-target="#navigationBar" data-offset="3">
-  <div class="jumbotron-fluid Banner"> <!-- Banner -->
+  <div class="jumbotron-fluid Banner" id="wedo"> <!-- Banner -->
     <div class="container">
         <div class="align-items-flex-start">
           <div class = "row vertical-align">
@@ -24,7 +43,7 @@
                   <p><i>Storage solution connecting users and hosts, granting greater flexibility and trust between the residents within communities.</i></p>
                   <div class = "btn-group">
                     <button onClick = "window.location.href = '#register'" class = "btn btn-primary">Sign Up</button>
-                    <button onClick = "window.location.href = '#wedo'" class = "btn btn-light">Read More</button>
+                    <button onClick = "window.location.href = '#problem'" class = "btn btn-light">Read More</button>
                   </div>
                 
               </div>
@@ -49,10 +68,10 @@
     <div class = "collapse navbar-collapse justify-content-center" id = "navbarToggler">
     <ul class="navbar-nav nav justify-content-center mx-auto mt-2 mt-lg-0 nav-pills">
         <li class="nav-item">
-          <a class="nav-link " href="#wedo">What we do?</a>
+          <a class="nav-link " href="#problem">Traditional Storage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#solution">Solution to Your Problem</a>
+          <a class="nav-link " href="#solution">Our Solution</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#started">Getting Started</a>
@@ -67,9 +86,9 @@
     </div>
   </nav>
   <!------------------Problem Statement--------------------------------->
-  <div class="jumbotron-fluid problem-section" id = "wedo"> <!-- Problem statement. -->
+  <div class="jumbotron-fluid problem-section" id = "problem"> <!-- Problem statement. -->
     <div class="container">
-      <h1 class="display-3">Hate Traditional Storage?</h1>
+      <h1>Hate Traditional Storage?</h1>
       <p>We do too. </p>
       <div class="row justify-content-center">
             <div class="card">
@@ -83,7 +102,7 @@
                 <img src="assets/images/inflexibletimelines.svg" class="card-img-top" alt="..."/>
                 <div class="card-body">
                   <h3 class="card-title">Inflexible Timelines</h3>
-                  <p class="card-text">Ever tried hiring a storage service on a weekend?.</p>
+                  <p class="card-text">Ever tried hiring a storage service on a weekend?</p>
                 </div>
               </div>
             <div class="card">
@@ -99,7 +118,7 @@
     <!------------------Solution Statement--------------------------------->
   <div class="jumbotron-fluid solution-section" id = "solution"> <!-- Solution. -->
     <div class="container">
-      <h1 class="display-3">Our Solution</h1>
+      <h1>Our Solution</h1>
       <p>We empower users.</p>
       <div class="row justify-content-center">
           <div class="card">
@@ -144,9 +163,8 @@
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <div class="jumbotron-fluid user-section justify-content-center"> <!-- Our user process. -->
     <div class="container">
-      <h1 class="display-3">All you need to do.</h1>
-      <h1>Request, Choose, Review, and Decide.</h1>
-      <p>That's it!</p>
+      <h1>All you need to do is...</h1>
+      <br/>
       <div class="row justify-content-center">
           <div class="card">
               <img src="assets/images/bondet1.png" class="card-img-top" alt="..."/>
@@ -184,7 +202,7 @@
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
   <div class="jumbotron-fluid"> 
     <div class="container">
-      <h1 class="display-3">What our community hosts see.</h1>
+      <h1>What our community hosts see.</h1>
       <p>We take care of the people doing the heavy lifting.</p>
       <div class="row justify-content-center">
           <div class="card">
@@ -225,8 +243,11 @@
   <!-- Sign up email  here. -->
   <div class = " jumbotron-fluid email-section" id = "register">
   <div class = "container">
-    <h1 class = "display-3">Sign Up</h1>
-    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSf_XVKHdvvgxt-Gt0ETegm7kQG_tbZFIBechOUcEmczs8oNfA/formResponse">
+    <h1 class = "display-3">Interested?</h1>
+    <h4>Stay up to date on our progress.</h4>
+  <!--  <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSf_XVKHdvvgxt-Gt0ETegm7kQG_tbZFIBechOUcEmczs8oNfA/formResponse"> -->
+    <form action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSf_XVKHdvvgxt-Gt0ETegm7kQG_tbZFIBechOUcEmczs8oNfA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
       <div class = "emailForm mx-auto">
           <a name = "sign-up"></a>
           <input type="text" name="entry.418747771" id="email" type="text" aria-describedby="emailHelp" placeholder="" required/>
@@ -251,46 +272,204 @@
     <h1 class="display-3">Who are we?</h1>
     <p>We are Bondetous -- Northeastern University students who were tired of the status quo in the storage and moving industry.</p>
     <h2>Meet the Founders!</h2>
-    <div class=" ">
+    <div class = "row justify-content-center">
         <br/>
-        <ul class = "mx-auto">
-          <li>
-            <img src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
+            <div class="card" data-target="#exampleModalJovan" data-toggle="modal">
+            <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
+            <div class="card-body">
             <h3>Jovan Jean</h3>
-            <h4>Chief Executive Officer</h4>
-          </li>
-          <li>
-              <img src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
+            <h4>CEO</h4>
+            </div>
+            </div>
+              <div class="card" data-target="#exampleModalNeel" data-toggle="modal">
+              <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
+              <div class="card-body">
               <h3>Neel Choudhary</h3>
-              <h4>Chief Operating Officer</h4>
-          </li>
-          <li>
-                <img src = "https://media.licdn.com/dms/image/C4D03AQGvfsCphdqg7A/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=Y0A-n5yKPTAADYecfmgTE6t41afJ02qd2Quceu7t7sI">
-                <h3>Linda Zeng</h3>
-                <h4>Chief Design Officer</h4>
-          </li>
-          <li>
-              <img src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
+              <h4>COO</h4>
+              </div>
+              </div>
+              <div class="card"  data-target="#exampleModalLinda" data-toggle="modal">
+              <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4D03AQGvfsCphdqg7A/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=Y0A-n5yKPTAADYecfmgTE6t41afJ02qd2Quceu7t7sI">
+              <div class="card-body">
+              <h3>Linda Zeng</h3>
+              <h4>Lead Designer</h4>
+              </div>
+              </div>
+              <div class="card" data-target="#exampleModalBolaji" data-toggle="modal">
+              <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
+              <div class="card-body">
               <h3>Mobolaji Rotibi</h3>
               <h4>Product Lead</h4>
-          </li>
-          <li>
-              <img src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
+              </div>
+              </div>
+              <div class="card" data-target="#exampleModalToppur" data-toggle="modal">
+              <img class="card-img-top" src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
+              <div class="card-body">
               <h3>Rahul Toppur</h3>
               <h4>Cybersecurity Lead</h4>
-          </li>
-          <li>
-              <img src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
+              </div>
+              </div>
+              <div class="card" data-target="#exampleModalMathias" data-toggle="modal">
+              <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
+              <div class="card-body">
               <h3>Mathias Kools</h3>
-              <h4>Developer</h4>
-          </li>
-          <li class="mx-auto">
-              <img src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
+              <h4>All Stack</h4>
+              </div>
+              </div>
+              <div class="card" data-target="#exampleModalOliver" data-toggle="modal">
+              <img class="card-img-top" src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
+              <div class="card-body">
               <h3>Oliver Dai</h3>
-              <h4>Developer</h4>
-          </li>
-        </ul>
+              <h4>Waterboy</h4>
+              </div>
+              </div>
       </div>
+
+          <!-- Modal -->
+
+          <!--Mobolaji-->
+          <div class="modal fade" id="exampleModalBolaji" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4E03AQEIuTJAn2IhcA/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=ptUyF5Q_YuSRmxR0VNGq6wgt2H9f3zEZJwE5l5CF71M">
+                  
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="modal-title" id="exampleModalCenterTitle">Mobolaji Rotibi</h3>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Product Lead</h5>
+                    <hr/>
+                    I'm a Computer Science major with a Systems concentration.
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!--Neel-->
+          <div class="modal fade" id="exampleModalNeel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4E03AQEdXjuFprpEjQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=rA5W_MJO23jqIjrYxDtjv8ceEjQpL2K_M3WrL5ELKWE">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Neel Choudhary</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Chief Operating Officer</h5>
+                      <hr/>
+                      I'm a Computer Science major with an Artificial Intelligience concentration.
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          <!--Jovan-->
+          <div class="modal fade" id="exampleModalJovan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4E03AQF6WzyCPDS_zQ/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=DGXsCCwT20SZII9Dx0_ixqA8lnOw8h8xgYwB_DS5Apw">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Jovan Jean</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Chief Executive Officer</h5>
+                      <hr/>
+                      I'm a Computer Science major with a Artificial Intelligience concentration and a minor in Entrepreneurship.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--Linda-->
+          <div class="modal fade" id="exampleModalLinda" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4D03AQGvfsCphdqg7A/profile-displayphoto-shrink_800_800/0?e=1579132800&v=beta&t=Y0A-n5yKPTAADYecfmgTE6t41afJ02qd2Quceu7t7sI">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Linda Zeng</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Lead Designer</h5>
+                      <hr/>
+                      I'm a Civil Engineering Major.
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--Rahul Toppur-->
+          <div class="modal fade" id="exampleModalToppur" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://scontent.fzty2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/18222180_448628425491086_2170279733565479647_n.jpg?_nc_cat=111&_nc_oc=AQkJfsj9SjWypdqTzLya-mQsQQyEAXh4-GUEu3vxAMAyDA7SM-E9p2JT2m_ZqJo_XSo&_nc_ht=scontent.fzty2-1.fna&oh=99eaa59d7dde7f5d92431221643dedca&oe=5E56B774">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Rahul Toppur</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Cybersecurity Lead</h5>
+                      <hr/>
+                      I'm a Cybersecurity major.
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--Mathias-->
+          <div class="modal fade" id="exampleModalMathias" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4E03AQF9BEk5RCmlUQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=lqskWEyCCZF6458a_79DhWijszOKGkN96kwM4SXuzIc">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Mathias Kools</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and All Stack Developer</h5>
+                      <hr/>
+                      I'm a Computer Science and Math combined major.
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--Oliver-->
+          <div class="modal fade" id="exampleModalOliver" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <img class="modal-img-top" src = "https://media.licdn.com/dms/image/C4D03AQECfwWErZXI1A/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=oEB1igSWHgVstzSEbJB1nUe1vjxvKt6cOLKcBSDkhkc">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 class="modal-title" id="exampleModalCenterTitle">Oliver Dai</h3>
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Co-Founder and Waterboy</h5>
+                      <hr/>
+                      I'm a Computer Science major.
+                  </div>
+                </div>
+              </div>
+            </div>
     </div>
   </div>
   <!----------Bootstrap Script Tags (Do Not Remove)-------------------------->
@@ -298,6 +477,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">var submitted=false;</script> 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='index.html';}"></iframe> 
 
 </body>
 

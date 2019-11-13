@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
   }
+
+.card {
+    border: none;
+}
 /********************** Email Form *************************/
 
 .body{
@@ -86,15 +90,16 @@ form{
 
 .emailButton {
     text-align: center;
-    background-color: #c175ff;
+    background-color: #f4b400;
     width: 25%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #dba200;
     margin-top: 2rem;
+    color: white;
 }
 
 .emailButton:hover{
-    background-color: #58427c;
+    background-color: #dba200;
     color: white;
 }
 
@@ -137,6 +142,7 @@ form{
 .Banner h1{
     font-size: 5vw;
     text-align: left;
+    color: black;
 }
 
 
@@ -218,14 +224,13 @@ form{
 .problem-section {
     background: #ededed;
     /*background-image: linear-gradient(white, #fcf5ff);*/
-    width: 100vw;
     text-align: center;
 }
 
 .problem-section .card {
     text-align: center;
     width: 22rem;
-    height: 35rem;
+    height: 33rem;
     margin-right: 12px;
     /*margin-left: 8vw;*/
     margin-bottom: 12px;
@@ -327,15 +332,70 @@ form{
 
 .about-us ul li{
     display: inline-block;
-    padding: 3rem;
+    padding: 3vw;
 }
 
-.about-us img{
-    border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
+.about-us .card img{
+    max-width: 100%;
+    max-height: 17rem;
 }
 
+.about-us .card{
+    width: 17rem;
+    height: 24rem;
+    overflow: hidden;
+}
+
+.about-us .card:hover{
+    box-shadow: 0px 2vh #58427c,
+                0px 4vh #dba200;
+    transform: translateY(-10%);
+}
+
+.about-us .card:hover{
+    box-shadow: 0px 2vh #58427c,
+                0px 4vh #dba200;
+    transform: translateY(-10%);
+}
+
+.card-title {
+    font-size: 1.7rem;
+}
+
+.card-text {
+    font-size: 1.3rem;
+}
+
+.about-us h3 {
+    color: #58427c;
+}
+
+h1 {
+    color: #58427c;
+}
+
+.about-us h4 {
+    color: #dba200;
+}
+
+.modal img{
+    height: 100%;
+    width: 95%;
+}
+
+.modal-header {
+    background-color: transparent;
+}
+
+.modal-title {
+    color: #8000ff;
+    font-weight: bold;
+}
+
+.modal-body {
+    background-color: white;
+    color: #dba200;
+}
 /********************** Other Stuff ************************/
 
 .jumbotron-fluid {
@@ -351,9 +411,21 @@ form{
     border-color: #8000ff;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #58427c;
     border-color: #58427c;
+}
+
+.btn-light {
+    background-color: #f4b400;
+    border-color: #dba200;
+    color: white;
+}
+
+.btn-light:hover {
+    background-color: #dba200;
+    border-color: #dba200;
+    color: white;
 }
 
 a.btn-interest {
@@ -366,6 +438,11 @@ a.btn-interest {
 	color: rgba(0,0,0,.9);
 	font-size: 1.1rem;
 	font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #f4b400;
+    color: white !important;
 }
 
 a h2{
